@@ -21,7 +21,7 @@ public class AutorDAO extends DAO {
             em.merge(autor);
             em.getTransaction().commit();
         } catch (Exception e) {
-            throw new Exception("Error al modificar una autor");
+            throw new Exception("Error al modificar un autor");
         }
     }
 

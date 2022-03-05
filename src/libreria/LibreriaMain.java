@@ -63,7 +63,7 @@ public class LibreriaMain {
             List<Libro> lista = new ArrayList();
             lista = ls.buscarLibroPorNombreEditorial("Planeta");
 
-            for (int i = 0; i < lista.size(); i++) {
+            for (int i = 0; i < lista.size(); i++) { //uso una lista para que muestre varias 
                 //System.out.println(lista.get(i).getTitulo().toString());
                 System.out.println(lista.get(i).getTitulo().toString());
 

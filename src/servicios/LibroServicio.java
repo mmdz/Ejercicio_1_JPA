@@ -14,13 +14,14 @@ public class LibroServicio {
         return l;
     }
 
-    public void eliminar(Libro l) throws Exception{
+    public void eliminar(Libro l) throws Exception {
         ldao.eliminar(l);
     }
-    
-    public void modificar(Libro l) throws Exception{
+
+    public void modificar(Libro l) throws Exception {
         ldao.modificar(l);
     }
+
     public void validaciones(Libro l) throws Exception {
 
         //ejemplares, ej pres, ej rest, alta, aut, edit
@@ -42,24 +43,24 @@ public class LibroServicio {
         if (l.getAutor() == null || l.getAutor().getNombre().isEmpty()) {
             throw new Exception("Ingrese autor válido");
         }
-        if (l.getEditorial()== null || l.getEditorial().getNombre().isEmpty()) {
+        if (l.getEditorial() == null || l.getEditorial().getNombre().isEmpty()) {
             throw new Exception("Ingrese editorial válida");
         }
     }
 
-    public Libro buscarLibroPorIsbn(Long isbn){
+    public Libro buscarLibroPorIsbn(Long isbn) {
         return ldao.buscarLibroPorIsbn(isbn);
     }
-    
-    public Libro buscarLibroPorTitulo(String titulo){
+
+    public Libro buscarLibroPorTitulo(String titulo) {
         return ldao.buscarLibroPorTitulo(titulo);
     }
-    
-    public Libro buscarLibroPorNombreAutor(String nombre){
+
+    public Libro buscarLibroPorNombreAutor(String nombre) {
         return ldao.buscarLibroPorNombreAutor(nombre);
     }
-    
-    public List<Libro> buscarLibroPorNombreEditorial(String nombre){
+
+    public List<Libro> buscarLibroPorNombreEditorial(String nombre) {
         return ldao.buscarLibroPorNombreEditorial(nombre);
     }
 }

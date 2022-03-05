@@ -58,7 +58,7 @@ public class LibroDAO extends DAO {
         //SELECT l FROM Libro JOIN l.Autor a
     }
 
-//12) Búsqueda de un libro/s por nombre de Editorial
+//12) Búsqueda deun libro/s por nombre de Editorial
     public List<Libro> buscarLibroPorNombreEditorial(String nombre) {
         return em.createQuery("SELECT l FROM Libro l JOIN l.editorial e WHERE e.nombre = :nombre").setParameter("nombre", nombre).getResultList();
     }

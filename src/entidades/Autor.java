@@ -7,7 +7,6 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
-import static org.eclipse.persistence.expressions.ExpressionOperator.NotNull;
 
 @Entity //la agrego para q pueda crear en BD
 @Table(name = "Autor") //le pongo un nombre, sino por defecto le pone el  nombre de la clase

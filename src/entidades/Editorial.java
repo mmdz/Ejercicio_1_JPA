@@ -18,7 +18,7 @@ public class Editorial {
     @NotNull
     @Column(unique = true)
     private String nombre;
-    private Boolean alta = true;
+    private Boolean alta;
     
 
     public Editorial(){
